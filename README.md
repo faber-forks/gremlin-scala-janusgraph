@@ -32,6 +32,7 @@ Run the following inside the gremlin console (`gremlin> `)
 
 graph = JanusGraphFactory.open('conf/janusgraph-cassandra-es.properties')
 defineGraphSchema(graph)
+```
 
 After defining the schema in JanusGraph run the [[Crud]] object to add user vertex to the graph.
 
