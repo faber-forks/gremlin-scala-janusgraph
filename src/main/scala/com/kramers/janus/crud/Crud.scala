@@ -13,9 +13,7 @@ object Crud extends App {
     val userVertex = graph + user
 
     graph.tx().commit()
-    val uv = userVertex.toCC[User]
-    println(uv)
-    uv
+    userVertex.toCC[User]
   }
 
   createUser
